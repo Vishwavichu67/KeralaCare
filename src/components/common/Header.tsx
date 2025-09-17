@@ -14,7 +14,12 @@ export default function Header() {
             </span>
           </Link>
         </div>
-        <div className="flex flex-1 items-center justify-end space-x-2">
+        <nav className="flex flex-1 items-center space-x-2">
+            <Link href="/workers" className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors">
+                Workers
+            </Link>
+        </nav>
+        <div className="flex items-center justify-end space-x-2">
           <Button asChild variant="ghost">
             <Link href="/login">Login</Link>
           </Button>

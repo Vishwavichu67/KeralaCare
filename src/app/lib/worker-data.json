@@ -1,0 +1,64 @@
+{
+  "workers": [
+    {
+      "id": "1",
+      "personalInfo": {
+        "name": "Aarav Kumar",
+        "age": 32,
+        "gender": "Male",
+        "contact": "+91-9876543210",
+        "healthId": "KERALACARE-AARAV-KUMAR-32"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "O+",
+        "allergies": ["Pollen", "Penicillin"]
+      },
+      "vitals": {
+        "bloodPressure": "120/80 mmHg",
+        "heartRate": "72 bpm",
+        "temperature": "98.6°F",
+        "bloodSugar": "95 mg/dL"
+      },
+      "medicalHistory": [
+        "No chronic illnesses reported.",
+        "Fractured left arm in 2015."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "Occasionally",
+        "diet": "Primarily vegetarian, eats eggs.",
+        "exercise": "Manual labor work, walks 30 minutes daily."
+      }
+    },
+    {
+      "id": "2",
+      "personalInfo": {
+        "name": "Priya Sharma",
+        "age": 28,
+        "gender": "Female",
+        "contact": "+91-9123456789",
+        "healthId": "KERALACARE-PRIYA-SHARMA-28"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "A+",
+        "allergies": ["None"]
+      },
+      "vitals": {
+        "bloodPressure": "110/70 mmHg",
+        "heartRate": "68 bpm",
+        "temperature": "98.4°F",
+        "bloodSugar": "90 mg/dL"
+      },
+      "medicalHistory": [
+        "Diagnosed with mild asthma in childhood.",
+        "Fully vaccinated for COVID-19."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "No",
+        "diet": "Non-vegetarian.",
+        "exercise": "Walks 1 hour daily, yoga twice a week."
+      }
+    }
+  ]
+}
