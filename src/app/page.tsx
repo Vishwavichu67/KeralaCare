@@ -81,7 +81,7 @@ export default function Home() {
               priority
             />
           )}
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-black/40" />
           <div className="relative z-10 p-4 max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-headline font-bold mb-4 tracking-tight">
               Digital Health Record Management for Migrant Workers in Kerala
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {features.map((feature, index) => (
-                <div key={index} className="text-center p-6 bg-card rounded-lg shadow-sm transition-transform transform hover:-translate-y-2 hover:shadow-lg">
+                <div key={index} className="text-center p-6 bg-card rounded-lg shadow-sm transition-transform transform hover:-translate-y-2 hover:shadow-lg hover:shadow-primary/10">
                   <div className="flex justify-center items-center mb-4">
                     <div className="bg-primary/10 p-4 rounded-full">
                        <feature.icon className="h-8 w-8 text-primary" />
@@ -126,7 +126,7 @@ export default function Home() {
         </section>
 
         {/* How It Works Section */}
-        <section id="how-it-works" className="py-16 md:py-24 bg-secondary/50">
+        <section id="how-it-works" className="py-16 md:py-24 bg-secondary">
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-3xl mx-auto mb-12">
                     <h2 className="text-3xl font-headline font-bold text-primary">Simple Steps to Better Health</h2>
@@ -140,7 +140,7 @@ export default function Home() {
                         {howItWorksSteps.map((step, index) => (
                             <div key={index} className="relative p-6 bg-card rounded-lg shadow-md">
                                 <div className="flex justify-center items-center mb-4">
-                                    <div className="bg-accent/10 text-accent p-4 rounded-full text-2xl font-bold h-16 w-16 flex items-center justify-center ring-8 ring-secondary/50">
+                                    <div className="bg-accent/10 text-accent p-4 rounded-full text-2xl font-bold h-16 w-16 flex items-center justify-center ring-8 ring-secondary">
                                        0{index + 1}
                                     </div>
                                 </div>
@@ -164,10 +164,10 @@ export default function Home() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     {testimonials.map((testimonial, index) => (
-                        <Card key={index} className="bg-card">
+                        <Card key={index} className="bg-card border-l-4 border-accent">
                             <CardContent className="p-6">
                                 <p className="text-foreground/80 italic mb-4">"{testimonial.quote}"</p>
-                                <p className="font-bold text-right text-accent">- {testimonial.name}, <span className="font-normal text-foreground/60">{testimonial.location}</span></p>
+                                <p className="font-bold text-right text-primary">- {testimonial.name}, <span className="font-normal text-foreground/60">{testimonial.location}</span></p>
                             </CardContent>
                         </Card>
                     ))}
@@ -186,7 +186,7 @@ export default function Home() {
               data-ai-hint={getStartedImage.imageHint}
             />
           )}
-           <div className="absolute inset-0 bg-black/60" />
+           <div className="absolute inset-0 bg-black/50" />
            <div className="relative z-10 p-4 max-w-3xl mx-auto text-white">
              <h2 className="text-4xl font-headline font-bold mb-4">Get Started Today</h2>
              <p className="text-lg text-primary-foreground/90 mb-8">
