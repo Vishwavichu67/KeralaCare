@@ -20,8 +20,6 @@ export default function AppointmentScheduler() {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    // Set date only on the client-side to avoid hydration mismatch
-    setDate(new Date());
     setIsClient(true);
   }, []);
 
