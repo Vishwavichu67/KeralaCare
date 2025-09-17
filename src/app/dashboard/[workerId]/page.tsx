@@ -1,5 +1,6 @@
 
 
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Leaf, LogOut } from "lucide-react";
@@ -7,7 +8,6 @@ import HealthRecord from "@/components/dashboard/HealthRecord";
 import SdgAlignmentTool from "@/components/dashboard/SdgAlignmentTool";
 import HealthIdCard from "@/components/dashboard/HealthIdCard";
 import MedicalReports from "@/components/dashboard/MedicalReports";
-import AppointmentScheduler from "@/components/dashboard/AppointmentScheduler";
 import Chatbot from "@/components/dashboard/Chatbot";
 import workerData from '@/app/lib/worker-data.json';
 import { notFound } from "next/navigation";
@@ -45,7 +45,7 @@ function getWorkerById(id: string): Worker | undefined {
   return workerData.workers.find((worker) => worker.id === id);
 }
 
-export default function DashboardPage({ params, searchParams }: { params: { workerId: string }, searchParams: { doctorId?: string } }) {
+export default function DashboardPage({ params }: { params: { workerId: string } }) {
   const worker = getWorkerById(params.workerId);
 
   if (!worker) {
@@ -91,7 +91,6 @@ export default function DashboardPage({ params, searchParams }: { params: { work
             />
             <HealthRecord records={healthRecords} />
             <MedicalReports />
-            <AppointmentScheduler preselectedDoctorId={searchParams.doctorId} />
           </div>
           <div className="lg:col-span-1">
             <SdgAlignmentTool healthRecords={healthRecordsSummary} />

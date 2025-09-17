@@ -58,8 +58,7 @@ export default function DoctorsPage() {
                         </div>
                     </div>
                     <Button asChild className="w-full mt-auto">
-                        {/* For demonstration, we link to the first worker's dashboard. In a real app, this would be the logged-in user. */}
-                        <Link href={`/dashboard/1?doctorId=${doctor.id}`}>Book Appointment</Link>
+                        <Link href={`/book-appointment?doctorId=${doctor.id}`}>Book Appointment</Link>
                     </Button>
                   </CardContent>
                 </Card>

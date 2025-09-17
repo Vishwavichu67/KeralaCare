@@ -39,7 +39,25 @@ export default function AppointmentScheduler({ preselectedDoctorId }: Appointmen
   };
 
   if (!isClient) {
-    return null;
+    return (
+        <Card>
+            <CardHeader>
+                 <CardTitle className="flex items-center gap-2 text-primary">
+                    <CalendarIcon /> Book an Appointment
+                </CardTitle>
+                <CardDescription>
+                    Schedule a consultation with an available doctor.
+                </CardDescription>
+            </CardHeader>
+            <CardContent>
+                <div className="space-y-4">
+                    <div className="h-10 w-full bg-muted rounded-md animate-pulse"></div>
+                    <div className="h-10 w-full bg-muted rounded-md animate-pulse"></div>
+                    <div className="h-10 w-full bg-muted rounded-md animate-pulse"></div>
+                </div>
+            </CardContent>
+        </Card>
+    );
   }
 
   return (
