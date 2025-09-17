@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { User, Activity, HeartPulse, Droplets, AlertTriangle } from 'lucide-react';
@@ -64,7 +65,7 @@ export default function WorkersPage() {
                             <InfoItem icon={AlertTriangle} label="Allergies" value={worker.emergencyInfo.allergies} />
                         </div>
                     </div>
-                    <Link href="/dashboard" className="text-sm text-primary hover:underline text-center block pt-2">
+                    <Link href={`/dashboard/${worker.id}`} className="text-sm text-primary hover:underline text-center block pt-2">
                       View Full Dashboard &rarr;
                     </Link>
                   </CardContent>
