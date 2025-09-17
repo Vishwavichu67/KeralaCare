@@ -1,8 +1,8 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { QrCode, User } from "lucide-react";
-import { QRCode } from "react-qr-code";
+import { QrCode } from "lucide-react";
+import QRCode from "qrcode.react";
 
 type HealthIdCardProps = {
   workerName: string;
