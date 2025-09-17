@@ -17,10 +17,12 @@ export default function AppointmentScheduler() {
   const [time, setTime] = useState("");
   const [isBooking, setIsBooking] = useState(false);
   const [booked, setBooked] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
     // Set date only on the client-side to avoid hydration mismatch
     setDate(new Date());
+    setIsClient(true);
   }, []);
 
   const handleBooking = async () => {
@@ -59,25 +61,27 @@ export default function AppointmentScheduler() {
           </div>
           <div className="space-y-2">
             <Label>Date</Label>
-            <Popover>
-              <PopoverTrigger asChild>
-                <Button
-                  variant={"outline"}
-                  className="w-full justify-start text-left font-normal"
-                >
-                  <CalendarIcon className="mr-2 h-4 w-4" />
-                  {date ? format(date, "PPP") : <span>Pick a date</span>}
-                </Button>
-              </PopoverTrigger>
-              <PopoverContent className="w-auto p-0">
-                <Calendar
-                  mode="single"
-                  selected={date}
-                  onSelect={setDate}
-                  initialFocus
-                />
-              </PopoverContent>
-            </Popover>
+            {isClient && (
+              <Popover>
+                <PopoverTrigger asChild>
+                  <Button
+                    variant={"outline"}
+                    className="w-full justify-start text-left font-normal"
+                  >
+                    <CalendarIcon className="mr-2 h-4 w-4" />
+                    {date ? format(date, "PPP") : <span>Pick a date</span>}
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent className="w-auto p-0">
+                  <Calendar
+                    mode="single"
+                    selected={date}
+                    onSelect={setDate}
+                    initialFocus
+                  />
+                </PopoverContent>
+              </Popover>
+            )}
           </div>
            <div className="space-y-2">
             <Label htmlFor="time">Time</Label>
