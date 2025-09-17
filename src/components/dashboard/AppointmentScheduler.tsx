@@ -14,7 +14,7 @@ import { format } from "date-fns";
 
 export default function AppointmentScheduler() {
   const [doctor, setDoctor] = useState("");
-  const [date, setDate] = useState<Date | undefined>();
+  const [date, setDate] = useState<Date | undefined>(undefined);
   const [time, setTime] = useState("");
   const [isBooking, setIsBooking] = useState(false);
   const [booked, setBooked] = useState(false);
