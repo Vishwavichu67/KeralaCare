@@ -84,7 +84,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 p-4 max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-headline font-bold mb-4 tracking-tight">
-              Digital Health Record Management System for Migrant Workers in Kerala
+              Digital Health Record Management for Migrant Workers in Kerala
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 mb-8">
               Empowering migrant workers with accessible and secure digital health records, aligned with UN Sustainable Development Goals.
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {features.map((feature, index) => (
-                <div key={index} className="text-center p-6 bg-card rounded-lg shadow-sm transition-transform transform hover:-translate-y-2">
+                <div key={index} className="text-center p-6 bg-card rounded-lg shadow-sm transition-transform transform hover:-translate-y-2 hover:shadow-lg">
                   <div className="flex justify-center items-center mb-4">
                     <div className="bg-primary/10 p-4 rounded-full">
                        <feature.icon className="h-8 w-8 text-primary" />
@@ -134,18 +134,21 @@ export default function Home() {
                         Getting started with KeralaCare is quick and straightforward.
                     </p>
                 </div>
-                <div className="grid md:grid-cols-3 gap-8 text-center">
-                    {howItWorksSteps.map((step, index) => (
-                        <div key={index} className="p-6">
-                            <div className="flex justify-center items-center mb-4">
-                                <div className="bg-white p-5 rounded-full shadow-md">
-                                    <step.icon className="h-10 w-10 text-accent" />
+                <div className="relative">
+                    <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-border -translate-y-1/2"></div>
+                    <div className="relative grid md:grid-cols-3 gap-8 text-center">
+                        {howItWorksSteps.map((step, index) => (
+                            <div key={index} className="relative p-6 bg-card rounded-lg shadow-md">
+                                <div className="flex justify-center items-center mb-4">
+                                    <div className="bg-accent/10 text-accent p-4 rounded-full text-2xl font-bold h-16 w-16 flex items-center justify-center ring-8 ring-secondary/50">
+                                       0{index + 1}
+                                    </div>
                                 </div>
+                                <h3 className="text-xl font-bold font-headline mb-2">{step.title}</h3>
+                                <p className="text-foreground/70">{step.description}</p>
                             </div>
-                            <h3 className="text-xl font-bold font-headline mb-2">{step.title}</h3>
-                            <p className="text-foreground/70">{step.description}</p>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
