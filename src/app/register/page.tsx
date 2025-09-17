@@ -2,7 +2,6 @@
 'use client';
 
 import Link from "next/link";
-import { redirect } from 'next/navigation';
 import { useFormState, useFormStatus } from 'react-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import { registerAction } from "@/app/actions";
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -21,15 +21,7 @@ function SubmitButton() {
 }
 
 export default function RegisterPage() {
-  
-  async function register(prevState: any, formData: FormData) {
-    // In a real app, you would create the user account here.
-    // This is a server action.
-    'use server';
-    redirect('/dashboard');
-  }
-
-  const [state, formAction] = useFormState(register, null);
+  const [state, formAction] = useFormState(registerAction, null);
 
   return (
     <>
