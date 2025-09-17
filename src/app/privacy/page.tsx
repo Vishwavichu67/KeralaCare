@@ -1,14 +1,24 @@
+
+"use client";
+
+import { useState, useEffect } from "react";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 
 export default function PrivacyPage() {
+  const [lastUpdatedDate, setLastUpdatedDate] = useState('');
+
+  useEffect(() => {
+    setLastUpdatedDate(new Date().toLocaleDateString());
+  }, []);
+
   return (
     <>
       <Header />
       <main className="flex-1 py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 max-w-4xl prose prose-lg prose-p:text-foreground/80 prose-headings:text-primary prose-strong:text-foreground">
           <h1>Privacy and Data Protection</h1>
-          <p><strong>Last Updated:</strong> {new Date().toLocaleDateString()}</p>
+          {lastUpdatedDate && <p><strong>Last Updated:</strong> {lastUpdatedDate}</p>}
 
           <h2>1. Introduction</h2>
           <p>
