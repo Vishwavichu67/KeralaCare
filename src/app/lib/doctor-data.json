@@ -48,6 +48,54 @@
       "hospital": "Medical Trust Hospital, Kochi",
       "location": "Kochi",
       "imageUrl": "https://picsum.photos/seed/doc6/400/400"
+    },
+    {
+      "id": "doc-7",
+      "name": "Dr. Aisha Khan",
+      "specialty": "Neurologist",
+      "hospital": "Amrita Hospital, Kochi",
+      "location": "Kochi",
+      "imageUrl": "https://picsum.photos/seed/doc7/400/400"
+    },
+    {
+      "id": "doc-8",
+      "name": "Dr. Sunil Varma",
+      "specialty": "Oncologist",
+      "hospital": "Regional Cancer Centre, Thiruvananthapuram",
+      "location": "Thiruvananthapuram",
+      "imageUrl": "https://picsum.photos/seed/doc8/400/400"
+    },
+    {
+      "id": "doc-9",
+      "name": "Dr. Fatima Ali",
+      "specialty": "Endocrinologist",
+      "hospital": "Baby Memorial Hospital, Kozhikode",
+      "location": "Kozhikode",
+      "imageUrl": "https://picsum.photos/seed/doc9/400/400"
+    },
+    {
+      "id": "doc-10",
+      "name": "Dr. David John",
+      "specialty": "Psychiatrist",
+      "hospital": "Lourdes Hospital, Kochi",
+      "location": "Kochi",
+      "imageUrl": "https://picsum.photos/seed/doc10/400/400"
+    },
+    {
+      "id": "doc-11",
+      "name": "Dr. Sneha Pillai",
+      "specialty": "Ophthalmologist",
+      "hospital": "Chaithanya Eye Hospital, Thiruvananthapuram",
+      "location": "Thiruvananthapuram",
+      "imageUrl": "https://picsum.photos/seed/doc11/400/400"
+    },
+    {
+      "id": "doc-12",
+      "name": "Dr. Rajesh Nair",
+      "specialty": "Urologist",
+      "hospital": "PVS Hospital, Kozhikode",
+      "location": "Kozhikode",
+      "imageUrl": "https://picsum.photos/seed/doc12/400/400"
     }
   ]
 }
