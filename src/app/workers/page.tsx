@@ -5,7 +5,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 import workerData from '@/app/lib/worker-data.json';
 
-const InfoItem = ({ icon: Icon, label, value }: { icon: React.ElementType, label: string, value: string | number | string[] }) => (
+const InfoItem = ({ icon: Icon, label, value }: { icon: React.ElementType, label: string, value: string | number | readonly string[] }) => (
     <div className="flex items-start gap-3">
         <Icon className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
         <div>
