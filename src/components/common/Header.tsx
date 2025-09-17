@@ -14,9 +14,12 @@ export default function Header() {
             </span>
           </Link>
         </div>
-        <nav className="flex flex-1 items-center space-x-2">
+        <nav className="flex flex-1 items-center space-x-4">
             <Link href="/workers" className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors">
                 Workers
+            </Link>
+            <Link href="/doctors" className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors">
+                Doctors
             </Link>
         </nav>
         <div className="flex items-center justify-end space-x-2">
