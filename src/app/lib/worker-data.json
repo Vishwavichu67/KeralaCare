@@ -206,6 +206,296 @@
         "diet": "Non-vegetarian",
         "exercise": "Retail work, walks 45 minutes daily"
       }
+    },
+    {
+      "id": "8",
+      "personalInfo": {
+        "name": "Vijay Kumar",
+        "age": 38,
+        "gender": "Male",
+        "contact": "+91-9988776655",
+        "healthId": "KERALACARE-VIJAY-KUMAR-38"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "O+",
+        "allergies": ["None"]
+      },
+      "vitals": {
+        "bloodPressure": "122/81 mmHg",
+        "heartRate": "74 bpm",
+        "temperature": "98.5°F",
+        "bloodSugar": "100 mg/dL"
+      },
+      "medicalHistory": [
+        "No chronic illnesses reported."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "No",
+        "diet": "Non-vegetarian",
+        "exercise": "Gardening, moderate activity"
+      }
+    },
+    {
+      "id": "9",
+      "personalInfo": {
+        "name": "Sunita Devi",
+        "age": 33,
+        "gender": "Female",
+        "contact": "+91-8877665544",
+        "healthId": "KERALACARE-SUNITA-DEVI-33"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "A+",
+        "allergies": ["Latex"]
+      },
+      "vitals": {
+        "bloodPressure": "112/72 mmHg",
+        "heartRate": "69 bpm",
+        "temperature": "98.3°F",
+        "bloodSugar": "91 mg/dL"
+      },
+      "medicalHistory": [
+        "Fully vaccinated for COVID-19."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "No",
+        "diet": "Vegetarian",
+        "exercise": "Housekeeping, high activity"
+      }
+    },
+    {
+      "id": "10",
+      "personalInfo": {
+        "name": "Rajesh Murmu",
+        "age": 42,
+        "gender": "Male",
+        "contact": "+91-7766554433",
+        "healthId": "KERALACARE-RAJESH-MURMU-42"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "B-",
+        "allergies": ["None"]
+      },
+      "vitals": {
+        "bloodPressure": "135/88 mmHg",
+        "heartRate": "78 bpm",
+        "temperature": "98.8°F",
+        "bloodSugar": "115 mg/dL"
+      },
+      "medicalHistory": [
+        "History of kidney stones."
+      ],
+      "lifestyle": {
+        "smoker": "Yes",
+        "alcohol": "Socially",
+        "diet": "Non-vegetarian",
+        "exercise": "Construction work, high activity"
+      }
+    },
+    {
+      "id": "11",
+      "personalInfo": {
+        "name": "Geeta Kumari",
+        "age": 29,
+        "gender": "Female",
+        "contact": "+91-6655443322",
+        "healthId": "KERALACARE-GEETA-KUMARI-29"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "AB+",
+        "allergies": ["None"]
+      },
+      "vitals": {
+        "bloodPressure": "118/76 mmHg",
+        "heartRate": "71 bpm",
+        "temperature": "98.6°F",
+        "bloodSugar": "102 mg/dL"
+      },
+      "medicalHistory": [
+        "No significant medical history."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "No",
+        "diet": "Vegetarian",
+        "exercise": "Garment factory worker, moderate activity"
+      }
+    },
+    {
+      "id": "12",
+      "personalInfo": {
+        "name": "Amit Patel",
+        "age": 31,
+        "gender": "Male",
+        "contact": "+91-5544332211",
+        "healthId": "KERALACARE-AMIT-PATEL-31"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "O-",
+        "allergies": ["Ibuprofen"]
+      },
+      "vitals": {
+        "bloodPressure": "124/79 mmHg",
+        "heartRate": "77 bpm",
+        "temperature": "98.9°F",
+        "bloodSugar": "108 mg/dL"
+      },
+      "medicalHistory": [
+        "Minor knee injury in 2021."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "No",
+        "diet": "Non-vegetarian",
+        "exercise": "Driver, low activity"
+      }
+    },
+    {
+      "id": "13",
+      "personalInfo": {
+        "name": "Pooja Singh",
+        "age": 26,
+        "gender": "Female",
+        "contact": "+91-9876543211",
+        "healthId": "KERALACARE-POOJA-SINGH-26"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "A-",
+        "allergies": ["None"]
+      },
+      "vitals": {
+        "bloodPressure": "108/68 mmHg",
+        "heartRate": "66 bpm",
+        "temperature": "98.1°F",
+        "bloodSugar": "88 mg/dL"
+      },
+      "medicalHistory": [
+        "Healthy, no pre-existing conditions."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "No",
+        "diet": "Vegetarian",
+        "exercise": "Student, low activity"
+      }
+    },
+    {
+      "id": "14",
+      "personalInfo": {
+        "name": "Deepak Yadav",
+        "age": 36,
+        "gender": "Male",
+        "contact": "+91-8765432110",
+        "healthId": "KERALACARE-DEEPAK-YADAV-36"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "B+",
+        "allergies": ["Seafood"]
+      },
+      "vitals": {
+        "bloodPressure": "128/84 mmHg",
+        "heartRate": "73 bpm",
+        "temperature": "98.7°F",
+        "bloodSugar": "104 mg/dL"
+      },
+      "medicalHistory": [
+        "No chronic illnesses reported."
+      ],
+      "lifestyle": {
+        "smoker": "Socially",
+        "alcohol": "Socially",
+        "diet": "Non-vegetarian",
+        "exercise": "Electrician, moderate activity"
+      }
+    },
+    {
+      "id": "15",
+      "personalInfo": {
+        "name": "Meena Devi",
+        "age": 40,
+        "gender": "Female",
+        "contact": "+91-7654321109",
+        "healthId": "KERALACARE-MEENA-DEVI-40"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "AB-",
+        "allergies": ["Aspirin"]
+      },
+      "vitals": {
+        "bloodPressure": "126/80 mmHg",
+        "heartRate": "70 bpm",
+        "temperature": "98.5°F",
+        "bloodSugar": "99 mg/dL"
+      },
+      "medicalHistory": [
+        "Takes medication for thyroid."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "No",
+        "diet": "Vegetarian",
+        "exercise": "Cook, moderate activity"
+      }
+    },
+    {
+      "id": "16",
+      "personalInfo": {
+        "name": "Karan Sharma",
+        "age": 27,
+        "gender": "Male",
+        "contact": "+91-6543211098",
+        "healthId": "KERALACARE-KARAN-SHARMA-27"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "O-",
+        "allergies": ["None"]
+      },
+      "vitals": {
+        "bloodPressure": "116/74 mmHg",
+        "heartRate": "67 bpm",
+        "temperature": "98.4°F",
+        "bloodSugar": "93 mg/dL"
+      },
+      "medicalHistory": [
+        "Healthy, no pre-existing conditions."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "No",
+        "diet": "Non-vegetarian",
+        "exercise": "IT professional, low activity"
+      }
+    },
+    {
+      "id": "17",
+      "personalInfo": {
+        "name": "Rani Begum",
+        "age": 34,
+        "gender": "Female",
+        "contact": "+91-9876501235",
+        "healthId": "KERALACARE-RANI-BEGUM-34"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "A-",
+        "allergies": ["None"]
+      },
+      "vitals": {
+        "bloodPressure": "114/73 mmHg",
+        "heartRate": "68 bpm",
+        "temperature": "98.2°F",
+        "bloodSugar": "90 mg/dL"
+      },
+      "medicalHistory": [
+        "No significant medical history."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "No",
+        "diet": "Non-vegetarian",
+        "exercise": "Beautician, low activity"
+      }
     }
   ]
 }
