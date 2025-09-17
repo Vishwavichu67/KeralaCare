@@ -1,6 +1,7 @@
+
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -13,10 +14,14 @@ import { format } from "date-fns";
 
 export default function AppointmentScheduler() {
   const [doctor, setDoctor] = useState("");
-  const [date, setDate] = useState<Date | undefined>(new Date());
+  const [date, setDate] = useState<Date | undefined>();
   const [time, setTime] = useState("");
   const [isBooking, setIsBooking] = useState(false);
   const [booked, setBooked] = useState(false);
+
+  useEffect(() => {
+    setDate(new Date());
+  }, []);
 
   const handleBooking = async () => {
     setIsBooking(true);
