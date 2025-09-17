@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { User, Activity, HeartPulse, ListPlus, Stethoscope, Cigarette, GlassWater, Utensils, Bike } from "lucide-react";
+import { User, Activity, HeartPulse, ListPlus, Stethoscope, Cigarette, GlassWater, Utensils, Bike, AlertTriangle, Droplets } from "lucide-react";
 
 type HealthRecordProps = {
   records: {
@@ -9,6 +9,10 @@ type HealthRecordProps = {
       gender: string;
       contact: string;
     };
+    emergencyInfo: {
+      bloodGroup: string;
+      allergies: string[];
+    },
     vitals: {
       bloodPressure: string;
       heartRate: string;
@@ -39,6 +43,29 @@ export default function HealthRecord({ records }: HealthRecordProps) {
   return (
     <div className="space-y-6">
         <h2 className="text-2xl font-bold font-headline text-primary">Your Digital Health Record</h2>
+        
+        <Card className="border-destructive bg-destructive/5">
+            <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-destructive">
+                    <AlertTriangle /> Emergency Information
+                </CardTitle>
+            </CardHeader>
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <InfoItem icon={Droplets} label="Blood Group" value={records.emergencyInfo.bloodGroup} />
+                <div>
+                    <div className="flex items-center gap-4">
+                        <AlertTriangle className="h-5 w-5 text-accent" />
+                        <div className="flex-1">
+                             <p className="text-sm text-muted-foreground">Allergies</p>
+                             <ul className="font-medium list-disc list-inside">
+                                {records.emergencyInfo.allergies.map((allergy, index) => <li key={index}>{allergy}</li>)}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </CardContent>
+        </Card>
+        
         <div className="grid gap-6 md:grid-cols-2">
             <Card>
                 <CardHeader>

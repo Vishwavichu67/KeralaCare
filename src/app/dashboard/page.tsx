@@ -4,6 +4,9 @@ import { Leaf, LogOut } from "lucide-react";
 import HealthRecord from "@/components/dashboard/HealthRecord";
 import SdgAlignmentTool from "@/components/dashboard/SdgAlignmentTool";
 import HealthIdCard from "@/components/dashboard/HealthIdCard";
+import MedicalReports from "@/components/dashboard/MedicalReports";
+import AppointmentScheduler from "@/components/dashboard/AppointmentScheduler";
+import Chatbot from "@/components/dashboard/Chatbot";
 
 // Mock health records for demonstration
 const healthRecords = {
@@ -13,6 +16,10 @@ const healthRecords = {
     gender: "Male",
     contact: "+91-9876543210",
   },
+  emergencyInfo: {
+    bloodGroup: "O+",
+    allergies: ["Pollen", "Penicillin"],
+  },
   vitals: {
     bloodPressure: "120/80 mmHg",
     heartRate: "72 bpm",
@@ -21,7 +28,6 @@ const healthRecords = {
   },
   medicalHistory: [
     "No chronic illnesses reported.",
-    "Seasonal allergies to pollen.",
     "Fractured left arm in 2015.",
   ],
   lifestyle: {
@@ -34,6 +40,7 @@ const healthRecords = {
 
 const healthRecordsSummary = `
   Personal Information: Name - ${healthRecords.personalInfo.name}, Age - ${healthRecords.personalInfo.age}, Gender - ${healthRecords.personalInfo.gender}.
+  Emergency Info: Blood Group - ${healthRecords.emergencyInfo.bloodGroup}, Allergies - ${healthRecords.emergencyInfo.allergies.join(', ')}.
   Vitals: Blood Pressure - ${healthRecords.vitals.bloodPressure}, Heart Rate - ${healthRecords.vitals.heartRate}, Blood Sugar - ${healthRecords.vitals.bloodSugar}.
   Medical History: ${healthRecords.medicalHistory.join(' ')}
   Lifestyle Choices: ${JSON.stringify(healthRecords.lifestyle)}
@@ -70,13 +77,15 @@ export default function DashboardPage() {
               healthId={healthId}
             />
             <HealthRecord records={healthRecords} />
+            <MedicalReports />
+            <AppointmentScheduler />
           </div>
           <div className="lg:col-span-1">
             <SdgAlignmentTool healthRecords={healthRecordsSummary} />
           </div>
         </div>
-
       </main>
+      <Chatbot />
     </div>
   );
 }
