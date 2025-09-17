@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Leaf, LogOut } from "lucide-react";
 import HealthRecord from "@/components/dashboard/HealthRecord";
 import SdgAlignmentTool from "@/components/dashboard/SdgAlignmentTool";
+import HealthIdCard from "@/components/dashboard/HealthIdCard";
 
 // Mock health records for demonstration
 const healthRecords = {
@@ -39,6 +40,8 @@ const healthRecordsSummary = `
 `;
 
 export default function DashboardPage() {
+  const healthId = `KERALACARE-${healthRecords.personalInfo.name.toUpperCase().replace(/\s/g, '-')}-${healthRecords.personalInfo.age}`;
+
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-40 w-full border-b bg-background">
@@ -61,7 +64,11 @@ export default function DashboardPage() {
         </div>
         
         <div className="grid gap-8 lg:grid-cols-3">
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 space-y-8">
+            <HealthIdCard 
+              workerName={healthRecords.personalInfo.name}
+              healthId={healthId}
+            />
             <HealthRecord records={healthRecords} />
           </div>
           <div className="lg:col-span-1">
