@@ -1,7 +1,8 @@
 
 'use server';
 
-import { SdgAlignmentAdviceOutput, getSdgAlignmentAdvice } from "@/ai/flows/sdg-alignment-advice";
+import { SdgAlignmentAdviceOutput } from "@/ai/flows/sdg-types";
+import { getSdgAlignmentAdvice } from "@/ai/flows/sdg-alignment-advice";
 import { redirect } from "next/navigation";
 
 export async function getAdviceAction(healthRecords: string): Promise<SdgAlignmentAdviceOutput> {
