@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     {
@@ -5,6 +6,12 @@
       "description": "A comforting image of a healthcare professional assisting a patient, representing care and support.",
       "imageUrl": "https://picsum.photos/seed/kerala-care-hero/1200/500",
       "imageHint": "health worker patient"
+    },
+    {
+      "id": "get-started-banner",
+      "description": "A vibrant image of a diverse group of people, representing the community of migrant workers.",
+      "imageUrl": "https://picsum.photos/seed/kerala-care-cta/1200/600",
+      "imageHint": "diverse community"
     }
   ]
 }
