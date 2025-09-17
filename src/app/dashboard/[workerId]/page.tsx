@@ -1,4 +1,5 @@
 
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Leaf, LogOut } from "lucide-react";
@@ -44,7 +45,7 @@ function getWorkerById(id: string): Worker | undefined {
   return workerData.workers.find((worker) => worker.id === id);
 }
 
-export default function DashboardPage({ params }: { params: { workerId: string } }) {
+export default function DashboardPage({ params, searchParams }: { params: { workerId: string }, searchParams: { doctorId?: string } }) {
   const worker = getWorkerById(params.workerId);
 
   if (!worker) {
@@ -90,7 +91,7 @@ export default function DashboardPage({ params }: { params: { workerId: string }
             />
             <HealthRecord records={healthRecords} />
             <MedicalReports />
-            <AppointmentScheduler />
+            <AppointmentScheduler preselectedDoctorId={searchParams.doctorId} />
           </div>
           <div className="lg:col-span-1">
             <SdgAlignmentTool healthRecords={healthRecordsSummary} />

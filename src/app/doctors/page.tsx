@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 import doctorData from '@/app/lib/doctor-data.json';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function DoctorsPage() {
   return (
@@ -56,7 +57,10 @@ export default function DoctorsPage() {
                             </div>
                         </div>
                     </div>
-                    <Button className="w-full mt-auto">Book Appointment</Button>
+                    <Button asChild className="w-full mt-auto">
+                        {/* For demonstration, we link to the first worker's dashboard. In a real app, this would be the logged-in user. */}
+                        <Link href={`/dashboard/1?doctorId=${doctor.id}`}>Book Appointment</Link>
+                    </Button>
                   </CardContent>
                 </Card>
               ))}

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -10,9 +11,14 @@ import { Calendar as CalendarIcon, Loader, CheckCircle } from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { format } from "date-fns";
+import doctorData from '@/app/lib/doctor-data.json';
 
-export default function AppointmentScheduler() {
-  const [doctor, setDoctor] = useState("");
+type AppointmentSchedulerProps = {
+  preselectedDoctorId?: string;
+};
+
+export default function AppointmentScheduler({ preselectedDoctorId }: AppointmentSchedulerProps) {
+  const [doctor, setDoctor] = useState(preselectedDoctorId || "");
   const [date, setDate] = useState<Date | undefined>(undefined);
   const [time, setTime] = useState("");
   const [isBooking, setIsBooking] = useState(false);
@@ -55,9 +61,11 @@ export default function AppointmentScheduler() {
                 <SelectValue placeholder="Select a doctor" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="dr-sharma">Dr. Sharma (Cardiologist)</SelectItem>
-                <SelectItem value="dr-gupta">Dr. Gupta (General Physician)</SelectItem>
-                <SelectItem value="dr-patel">Dr. Patel (Dermatologist)</SelectItem>
+                {doctorData.doctors.map((doc) => (
+                  <SelectItem key={doc.id} value={doc.id}>
+                    {doc.name} ({doc.specialty})
+                  </SelectItem>
+                ))}
               </SelectContent>
             </Select>
           </div>
