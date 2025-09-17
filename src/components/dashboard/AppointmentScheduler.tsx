@@ -21,7 +21,7 @@ export default function AppointmentScheduler() {
   const handleBooking = async () => {
     setIsBooking(true);
     setBooked(false);
-    // Placeholder for Firestore booking logic
+    // Placeholder for booking logic
     await new Promise(resolve => setTimeout(resolve, 2000));
     setIsBooking(false);
     setBooked(true);

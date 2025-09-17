@@ -27,10 +27,9 @@ export default function MedicalReports() {
     setIsUploading(true);
     setError("");
 
-    // Placeholder for Firebase Storage upload logic
+    // Placeholder for upload logic
     await new Promise(resolve => setTimeout(resolve, 2000));
     
-    // In a real app, you'd get the file URL from Firebase and store metadata in Firestore.
     setUploadedFiles(prev => [...prev, { name: selectedFile.name, date: new Date().toLocaleDateString() }]);
     setSelectedFile(null);
     setIsUploading(false);

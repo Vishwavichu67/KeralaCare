@@ -1,5 +1,7 @@
 'use server';
 
+import { z } from 'zod';
+
 /**
  * @fileOverview Provides personalized advice on aligning health decisions with SDGs.
  *
@@ -8,10 +10,7 @@
  * - SdgAlignmentAdviceOutput - The return type for the getSdgAlignmentAdvice function.
  */
 
-import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
-
-const SdgAlignmentAdviceInputSchema = z.object({
+export const SdgAlignmentAdviceInputSchema = z.object({
   healthRecords: z
     .string()
     .describe(
@@ -20,7 +19,7 @@ const SdgAlignmentAdviceInputSchema = z.object({
 });
 export type SdgAlignmentAdviceInput = z.infer<typeof SdgAlignmentAdviceInputSchema>;
 
-const SdgAlignmentAdviceOutputSchema = z.object({
+export const SdgAlignmentAdviceOutputSchema = z.object({
   advice: z
     .string()
     .describe(
@@ -32,29 +31,10 @@ export type SdgAlignmentAdviceOutput = z.infer<typeof SdgAlignmentAdviceOutputSc
 export async function getSdgAlignmentAdvice(
   input: SdgAlignmentAdviceInput
 ): Promise<SdgAlignmentAdviceOutput> {
-  return sdgAlignmentAdviceFlow(input);
+  console.log("Health records received:", input.healthRecords);
+  // Simulate AI advice generation
+  await new Promise(resolve => setTimeout(resolve, 1500));
+  return {
+      advice: "Based on your records, consider incorporating more green vegetables into your diet to align with SDG 3 (Good Health). Reducing processed food intake can also contribute to more sustainable consumption patterns (SDG 12)."
+  };
 }
-
-const prompt = ai.definePrompt({
-  name: 'sdgAlignmentAdvicePrompt',
-  input: {schema: SdgAlignmentAdviceInputSchema},
-  output: {schema: SdgAlignmentAdviceOutputSchema},
-  prompt: `You are an expert health advisor, specialized in providing advice that aligns personal health decisions with the United Nations Sustainable Development Goals (SDGs), particularly SDGs 3 (Good Health and Well-being), 8 (Decent Work and Economic Growth), 10 (Reduced Inequalities), and 16 (Peace, Justice and Strong Institutions).
-
-  Based on the following health records, provide personalized and actionable advice on how the user can make informed decisions to improve their health and contribute to the achievement of the SDGs.
-
-  Health Records: {{{healthRecords}}}
-  `,
-});
-
-const sdgAlignmentAdviceFlow = ai.defineFlow(
-  {
-    name: 'sdgAlignmentAdviceFlow',
-    inputSchema: SdgAlignmentAdviceInputSchema,
-    outputSchema: SdgAlignmentAdviceOutputSchema,
-  },
-  async input => {
-    const {output} = await prompt(input);
-    return output!;
-  }
-);
