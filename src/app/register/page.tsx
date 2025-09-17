@@ -10,6 +10,7 @@ import { Label } from "@/components/ui/label";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import { registerAction } from "@/app/actions";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -34,6 +35,11 @@ export default function RegisterPage() {
           </CardHeader>
           <CardContent>
             <form action={formAction} className="space-y-4">
+              {state?.message && (
+                  <Alert variant="destructive">
+                      <AlertDescription>{state.message}</AlertDescription>
+                  </Alert>
+              )}
               <div className="space-y-2">
                 <Label htmlFor="name">Full Name</Label>
                 <Input name="name" id="name" placeholder="Your Full Name" required />
