@@ -1,3 +1,4 @@
+
 {
   "workers": [
     {
@@ -58,6 +59,152 @@
         "alcohol": "No",
         "diet": "Non-vegetarian.",
         "exercise": "Walks 1 hour daily, yoga twice a week."
+      }
+    },
+    {
+      "id": "3",
+      "personalInfo": {
+        "name": "Suresh Singh",
+        "age": 45,
+        "gender": "Male",
+        "contact": "+91-8765432109",
+        "healthId": "KERALACARE-SURESH-SINGH-45"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "B+",
+        "allergies": ["Dust"]
+      },
+      "vitals": {
+        "bloodPressure": "130/85 mmHg",
+        "heartRate": "75 bpm",
+        "temperature": "98.7°F",
+        "bloodSugar": "110 mg/dL"
+      },
+      "medicalHistory": [
+        "History of hypertension, managed with medication."
+      ],
+      "lifestyle": {
+        "smoker": "Yes, occasionally",
+        "alcohol": "No",
+        "diet": "Non-vegetarian",
+        "exercise": "Construction work"
+      }
+    },
+    {
+      "id": "4",
+      "personalInfo": {
+        "name": "Lakshmi Das",
+        "age": 35,
+        "gender": "Female",
+        "contact": "+91-7654321098",
+        "healthId": "KERALACARE-LAKSHMI-DAS-35"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "AB-",
+        "allergies": ["None"]
+      },
+      "vitals": {
+        "bloodPressure": "115/75 mmHg",
+        "heartRate": "70 bpm",
+        "temperature": "98.5°F",
+        "bloodSugar": "100 mg/dL"
+      },
+      "medicalHistory": [
+        "No significant medical history."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "No",
+        "diet": "Vegetarian",
+        "exercise": "Domestic help, moderate activity"
+      }
+    },
+    {
+      "id": "5",
+      "personalInfo": {
+        "name": "Manoj Biswas",
+        "age": 29,
+        "gender": "Male",
+        "contact": "+91-6543210987",
+        "healthId": "KERALACARE-MANOJ-BISWAS-29"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "O-",
+        "allergies": ["Sulfa drugs"]
+      },
+      "vitals": {
+        "bloodPressure": "125/80 mmHg",
+        "heartRate": "80 bpm",
+        "temperature": "99.0°F",
+        "bloodSugar": "105 mg/dL"
+      },
+      "medicalHistory": [
+        "Minor surgery in 2020.",
+        "Prone to seasonal flu."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "Socially",
+        "diet": "Non-vegetarian",
+        "exercise": "Factory worker, high activity"
+      }
+    },
+    {
+      "id": "6",
+      "personalInfo": {
+        "name": "Anjali Devi",
+        "age": 41,
+        "gender": "Female",
+        "contact": "+91-9876501234",
+        "healthId": "KERALACARE-ANJALI-DEVI-41"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "A-",
+        "allergies": ["Peanuts"]
+      },
+      "vitals": {
+        "bloodPressure": "128/82 mmHg",
+        "heartRate": "72 bpm",
+        "temperature": "98.6°F",
+        "bloodSugar": "98 mg/dL"
+      },
+      "medicalHistory": [
+        "Iron deficiency anemia, takes supplements."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "No",
+        "diet": "Vegetarian",
+        "exercise": "Tailoring, low activity"
+      }
+    },
+    {
+      "id": "7",
+      "personalInfo": {
+        "name": "Rohan Ahmed",
+        "age": 25,
+        "gender": "Male",
+        "contact": "+91-8765412309",
+        "healthId": "KERALACARE-ROHAN-AHMED-25"
+      },
+      "emergencyInfo": {
+        "bloodGroup": "B-",
+        "allergies": ["None"]
+      },
+      "vitals": {
+        "bloodPressure": "118/78 mmHg",
+        "heartRate": "65 bpm",
+        "temperature": "98.2°F",
+        "bloodSugar": "92 mg/dL"
+      },
+      "medicalHistory": [
+        "Healthy, no pre-existing conditions."
+      ],
+      "lifestyle": {
+        "smoker": "No",
+        "alcohol": "No",
+        "diet": "Non-vegetarian",
+        "exercise": "Retail work, walks 45 minutes daily"
       }
     }
   ]
