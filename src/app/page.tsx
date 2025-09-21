@@ -126,7 +126,7 @@ export default function Home() {
         </section>
 
         {/* How It Works Section */}
-        <section id="how-it-works" className="py-16 md:py-24 bg-secondary">
+        <section id="how-it-works" className="py-16 md:py-24 bg-secondary/50">
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-3xl mx-auto mb-12">
                     <h2 className="text-3xl font-headline font-bold text-primary">Simple Steps to Better Health</h2>
@@ -138,9 +138,9 @@ export default function Home() {
                     <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-border -translate-y-1/2"></div>
                     <div className="relative grid md:grid-cols-3 gap-8 text-center">
                         {howItWorksSteps.map((step, index) => (
-                            <div key={index} className="relative p-6 bg-card rounded-lg shadow-md">
+                            <div key={index} className="relative p-6 bg-card rounded-lg shadow-md transition-shadow hover:shadow-xl">
                                 <div className="flex justify-center items-center mb-4">
-                                    <div className="bg-accent/10 text-accent p-4 rounded-full text-2xl font-bold h-16 w-16 flex items-center justify-center ring-8 ring-secondary">
+                                    <div className="bg-accent/10 text-accent p-4 rounded-full text-2xl font-bold h-16 w-16 flex items-center justify-center ring-8 ring-secondary/50">
                                        0{index + 1}
                                     </div>
                                 </div>
