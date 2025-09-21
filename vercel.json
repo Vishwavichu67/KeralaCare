@@ -1,0 +1,12 @@
+{
+    "routes": [
+      {
+        "src": "/book-appointment",
+        "methods": ["GET"],
+        "headers": {
+          "Cache-Control": "no-store"
+        }
+      }
+    ]
+  }
+  
