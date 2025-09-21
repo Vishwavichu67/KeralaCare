@@ -3,9 +3,9 @@
   "placeholderImages": [
     {
       "id": "hero-banner",
-      "description": "A comforting image of a healthcare professional assisting a patient, representing care and support.",
+      "description": "A modern and clean hospital reception area, conveying professionalism and care.",
       "imageUrl": "https://picsum.photos/seed/kerala-care-hero/1200/500",
-      "imageHint": "health worker patient"
+      "imageHint": "modern hospital"
     },
     {
       "id": "get-started-banner",
